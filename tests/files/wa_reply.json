@@ -1,0 +1,68 @@
+[
+    {
+        "@context": "http://catch-dev.harvardx.harvard.edu/catch-context.jsonld",
+        "id": "125946",
+        "type": "Annotation",
+        "schema_version": "catch v1.0",
+        "created": "2016-04-06T12:55:29 UTC",
+        "modified": "2016-04-06T12:55:29 UTC",
+        "creator": {
+            "id": "1058ea0b00ddbd48718df6d18750fc27",
+            "name": "rsinghal"
+        },
+        "permissions": {
+            "can_read": [],
+            "can_update": [
+                "1058ea0b00ddbd48718df6d18750fc27"
+            ],
+            "can_delete": [
+                "1058ea0b00ddbd48718df6d18750fc27"
+            ],
+            "can_admin": [
+                "1058ea0b00ddbd48718df6d18750fc27"
+            ]
+        },
+        "platform": {
+            "platform_name": "hxat vX",
+            "context_id": "course-v1:HarvardX+HxAT101+2015_T4",
+            "collection_id": "e448f0b7-3bb4-4d21-a900-53246d5daed6",
+            "target_source_id": 31
+        },
+        "body": {
+            "type": "List",
+            "items": [
+                {
+                    "type": "TextualBody",
+                    "format": "text/html",
+                    "value": "i'm replying",
+                    "purpose": "replying"
+                },
+                {
+                    "type": "TextualBody",
+                    "value": "quick",
+                    "purpose": "tagging"
+                },
+                {
+                    "type": "TextualBody",
+                    "value": "test",
+                    "purpose": "tagging"
+                },
+                {
+                    "type": "TextualBody",
+                    "value": "onFriday",
+                    "purpose": "tagging"
+                }
+            ]
+        },
+        "target": {
+            "type": "List",
+            "items": [
+                {
+                    "type": "Annotation",
+                    "format": "text/html",
+                    "source": "125918"
+                }
+            ]
+        }
+    }
+]

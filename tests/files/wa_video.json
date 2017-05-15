@@ -1,0 +1,77 @@
+[
+    {
+        "@context": "http://catch-dev.harvardx.harvard.edu/catch-context.jsonld",
+        "id": "360606",
+        "type": "Annotation",
+        "schema_version": "catch v1.0",
+        "created": "2017-03-22T17:12:41 UTC",
+        "modified": "2017-03-22T17:12:41 UTC",
+        "creator": {
+            "id": "nmaekawa@g.harvard.edu",
+            "name": "nmaekawa2017"
+        },
+        "permissions": {
+            "can_read": [],
+            "can_update": [
+                "nmaekawa@g.harvard.edu"
+            ],
+            "can_delete": [
+                "nmaekawa@g.harvard.edu"
+            ],
+            "can_admin": [
+                "nmaekawa@g.harvard.edu"
+            ]
+        },
+        "platform": {
+            "platform_name": "hxat vX",
+            "context_id": "unknown",
+            "collection_id": "unknown",
+            "target_source_id": "https://edge.edx.org/courses/course-v1:HarvardX+GA001+2015/courseware/e6bad387d7c44d0aa0dcf32b92dab491/62426155746e41e09c60721cdbdc8759//undefined/1"
+        },
+        "body": {
+            "type": "List",
+            "items": [
+                {
+                    "type": "TextualBody",
+                    "format": "text/html",
+                    "value": "<p>checkout that mohawk!</p>",
+                    "purpose": "commenting"
+                },
+                {
+                    "type": "TextualBody",
+                    "value": "stylish",
+                    "purpose": "tagging"
+                },
+                {
+                    "type": "TextualBody",
+                    "value": "hair",
+                    "purpose": "tagging"
+                }
+            ]
+        },
+        "target": {
+            "type": "List",
+            "items": [
+                {
+                    "type": "Video",
+                    "source": "https://edge.edx.org/courses/course-v1:HarvardX+GA001+2015/courseware/e6bad387d7c44d0aa0dcf32b92dab491/62426155746e41e09c60721cdbdc8759//undefined/1",
+                    "format": "video/youtube",
+                    "selector": {
+                        "type": "List",
+                        "items": [
+                            {
+                                "type": "FragmentSelector",
+                                "conformsTo": "http://www.w3.org/TR/media-frags/",
+                                "value": "t=204.8893869103546,236.63106491488975",
+                                "refinedBy": {
+                                    "type": "CssSelector",
+                                    "value": "#vid1"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+]

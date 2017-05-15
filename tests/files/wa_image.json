@@ -1,0 +1,87 @@
+[
+    {
+        "@context": "http://catch-dev.harvardx.harvard.edu/catch-context.jsonld",
+        "id": "126969",
+        "type": "Annotation",
+        "schema_version": "catch v1.0",
+        "created": "2017-01-30T19:59:32 UTC",
+        "modified": "2017-01-30T19:59:32 UTC",
+        "creator": {
+            "id": "a223fa43592f3dc81abae27d5cba960f",
+            "name": "lduarte1991"
+        },
+        "permissions": {
+            "can_read": [],
+            "can_update": [
+                "a223fa43592f3dc81abae27d5cba960f"
+            ],
+            "can_delete": [
+                "a223fa43592f3dc81abae27d5cba960f"
+            ],
+            "can_admin": [
+                "a223fa43592f3dc81abae27d5cba960f"
+            ]
+        },
+        "platform": {
+            "platform_name": "hxat vX",
+            "context_id": "course-v1:HarvardX+HxAT101+2015_T4",
+            "collection_id": "6e7209ca-34c6-44cc-aff6-c11bebad17ce",
+            "target_source_id": "https://oculus.harvardx.harvard.edu/manifests/chx:201501/canvas/canvas-400098039.json"
+        },
+        "body": {
+            "type": "List",
+            "items": [
+                {
+                    "type": "TextualBody",
+                    "format": "text/html",
+                    "value": "oh i have this story about a watch tower",
+                    "purpose": "commenting"
+                },
+                {
+                    "type": "TextualBody",
+                    "value": "romance",
+                    "purpose": "tagging"
+                },
+                {
+                    "type": "TextualBody",
+                    "value": "intrigue",
+                    "purpose": "tagging"
+                },
+                {
+                    "type": "TextualBody",
+                    "value": "passion",
+                    "purpose": "tagging"
+                },
+                {
+                    "type": "TextualBody",
+                    "value": "violence",
+                    "purpose": "tagging"
+                }
+            ]
+        },
+        "target": {
+            "type": "Choice",
+            "items": [
+                {
+                    "type": "Image",
+                    "source": "https://oculus.harvardx.harvard.edu/manifests/chx:201501/canvas/canvas-400098039.json",
+                    "selector": {
+                        "type": "List",
+                        "items": [
+                            {
+                                "type": "FragmentSelector",
+                                "conformsTo": "http://www.w3.org/TR/media-frags/",
+                                "value": "xywh=72167,1471,1462,895"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "Thumbnail",
+                    "source": "https://images.harvardx.harvard.edu/ids/iiif/400098039/72167,1471,1462,895/full/0/native.jpg",
+                    "format": "image/jpg"
+                }
+            ]
+        }
+    }
+]

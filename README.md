@@ -1,4 +1,4 @@
-catch_formats
+catchformats
 ===============================
 
 version number: 0.0.1
@@ -14,12 +14,12 @@ Installation / Usage
 
 To install use pip:
 
-    $ pip install catch_formats
+    $ pip install catchformats
 
 
 Or clone the repo:
 
-    $ git clone https://github.com/nmaekawa/catch_formats.git
+    $ git clone https://github.com/nmaekawa/catchformats.git
     $ python setup.py install
 
 Contributing

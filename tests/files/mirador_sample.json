@@ -1,0 +1,186 @@
+[
+    {
+        "@context": "http://iiif.io/api/presentation/2/context.json",
+        "@type": "oa:Annotation",
+        "motivation": [
+            "oa:tagging",
+            "oa:commenting"
+        ],
+        "resource": [
+            {
+                "@type": "oa:Tag",
+                "chars": "musicsheet"
+            },
+            {
+                "@type": "dctypes:Text",
+                "format": "text/html",
+                "chars": "<p>bleeding from back of page or before-page?</p>"
+            }
+        ],
+        "on": [
+            {
+                "@type": "oa:SpecificResource",
+                "full": "http://iiif.bodleian.ox.ac.uk/iiif/canvas/8c0a1ea8-ab12-499d-903e-3c022fbd9771.json",
+                "selector": {
+                    "@type": "oa:Choice",
+                    "default": {
+                        "@type": "oa:FragmentSelector",
+                        "value": "xywh=1081,602,346,1123"
+                    },
+                    "item": {
+                        "@type": "oa:SvgSelector",
+                        "value": "<svg xmlns=http://www.w3.org/2000/svg><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M1081.10564,601.55849l172.98391,0l0,0l172.98391,0l0,561.33467l0,561.33467l-172.98391,0l-172.98391,0l0,-561.33467z\" data-paper-data=\"{&quot;strokeWidth&quot;:1,&quot;rotation&quot;:0,&quot;deleteIcon&quot;:null,&quot;rotationIcon&quot;:null,&quot;group&quot;:null,&quot;editable&quot;:true,&quot;annotation&quot;:null}\" id=\"rectangle_4c9f8de9-5dd4-4312-8a97-1bd3bc942c01\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
+                    }
+                },
+                "within": {
+                    "@id": "http://iiif.bodleian.ox.ac.uk/iiif/manifest/3b31c0a9-3dab-4801-b3dc-f2a3e3786d34.json",
+                    "@type": "sc:Manifest"
+                }
+            }
+        ],
+        "@id": "8f88ab25-d3d8-4a4c-b053-7d9356d29fce"
+    },
+    {
+        "@context": "http://iiif.io/api/presentation/2/context.json",
+        "@type": "oa:Annotation",
+        "motivation": [
+            "oa:tagging",
+            "oa:commenting"
+        ],
+        "resource": [
+            {
+                "@type": "oa:Tag",
+                "chars": "cat"
+            },
+            {
+                "@type": "oa:Tag",
+                "chars": "selfportrait"
+            },
+            {
+                "@type": "dctypes:Text",
+                "format": "text/html",
+                "chars": "<p>human eyes and nose in cat. could this be a selfportrait as well?</p>"
+            }
+        ],
+        "on": [
+            {
+                "@type": "oa:SpecificResource",
+                "full": "http://iiif.bodleian.ox.ac.uk/iiif/canvas/0d4137fa-9d6e-4ce1-b192-3df12abc314b.json",
+                "selector": {
+                    "@type": "oa:Choice",
+                    "default": {
+                        "@type": "oa:FragmentSelector",
+                        "value": "xywh=1487,1735,1509,611"
+                    },
+                    "item": {
+                        "@type": "oa:SvgSelector",
+                        "value": "<svg xmlns=http://www.w3.org/2000/svg><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M1487.37996,1734.7786l754.5203,0l0,0l754.5203,0l0,305.30627l0,305.30627l-754.5203,0l-754.5203,0l0,-305.30627z\" data-paper-data=\"{&quot;strokeWidth&quot;:1,&quot;rotation&quot;:0,&quot;deleteIcon&quot;:null,&quot;rotationIcon&quot;:null,&quot;group&quot;:null,&quot;editable&quot;:true,&quot;annotation&quot;:null}\" id=\"rectangle_e6c4c4d2-f076-4b1e-b305-5261120970f0\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
+                    }
+                },
+                "within": {
+                    "@id": "http://iiif.bodleian.ox.ac.uk/iiif/manifest/e32a277e-91e2-4a6d-8ba6-cc4bad230410.json",
+                    "@type": "sc:Manifest"
+                }
+            }
+        ],
+        "@id": "1d9ed6ae-1faa-4899-9491-eee7d1608f32"
+    },
+    {
+        "@context": "http://iiif.io/api/presentation/2/context.json",
+        "@type": "oa:Annotation",
+        "motivation": [
+            "oa:tagging",
+            "oa:commenting"
+        ],
+        "resource": [
+            {
+                "@type": "oa:Tag",
+                "chars": "cat"
+            },
+            {
+                "@type": "oa:Tag",
+                "chars": "selfportrait"
+            },
+            {
+                "@type": "oa:Tag",
+                "chars": "enemies"
+            },
+            {
+                "@type": "dctypes:Text",
+                "format": "text/html",
+                "chars": "<p>more animal face than the cat. does it represent enemies?</p>"
+            }
+        ],
+        "on": [
+            {
+                "@type": "oa:SpecificResource",
+                "full": "http://iiif.bodleian.ox.ac.uk/iiif/canvas/0d4137fa-9d6e-4ce1-b192-3df12abc314b.json",
+                "selector": {
+                    "@type": "oa:Choice",
+                    "default": {
+                        "@type": "oa:FragmentSelector",
+                        "value": "xywh=2975,2865,562,775"
+                    },
+                    "item": {
+                        "@type": "oa:SvgSelector",
+                        "value": "<svg xmlns=http://www.w3.org/2000/svg><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M2975.09952,2865.05904l281.15498,0l0,0l281.15498,0l0,387.42066l0,387.42066l-281.15498,0l-281.15498,0l0,-387.42066z\" data-paper-data=\"{&quot;strokeWidth&quot;:1,&quot;rotation&quot;:0,&quot;deleteIcon&quot;:null,&quot;rotationIcon&quot;:null,&quot;group&quot;:null,&quot;editable&quot;:true,&quot;annotation&quot;:null}\" id=\"rectangle_d2a9228c-057b-4d2c-bb56-5beebd3a186a\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
+                    }
+                },
+                "within": {
+                    "@id": "http://iiif.bodleian.ox.ac.uk/iiif/manifest/e32a277e-91e2-4a6d-8ba6-cc4bad230410.json",
+                    "@type": "sc:Manifest"
+                }
+            }
+        ],
+        "@id": "75434f7f-6cf8-4611-bb0b-90c46518d787"
+    },
+    {
+        "@context": "http://iiif.io/api/presentation/2/context.json",
+        "@type": "oa:Annotation",
+        "motivation": [
+            "oa:commenting",
+            "oa:tagging"
+        ],
+        "resource": [
+            {
+                "@type": "dctypes:Text",
+                "format": "text/html",
+                "chars": "<p>light and shadow is scratchy</p>"
+            },
+            {
+                "@type": "oa:Tag",
+                "chars": "vangogh"
+            },
+            {
+                "@type": "oa:Tag",
+                "chars": "selfportrait"
+            },
+            {
+                "@type": "oa:Tag",
+                "chars": "black&white"
+            }
+        ],
+        "on": [
+            {
+                "@type": "oa:SpecificResource",
+                "full": "http://iiif.harvardartmuseums.org/manifests/object/299843/canvas/canvas-43183422",
+                "selector": {
+                    "@type": "oa:Choice",
+                    "default": {
+                        "@type": "oa:FragmentSelector",
+                        "value": "xywh=368,488,748,700"
+                    },
+                    "item": {
+                        "@type": "oa:SvgSelector",
+                        "value": "<svg xmlns=http://www.w3.org/2000/svg><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M367.96939,488.05102l373.95918,0l0,0l373.95918,0l0,350.10714l0,350.10714l-373.95918,0l-373.95918,0l0,-350.10714z\" data-paper-data=\"{&quot;strokeWidth&quot;:1,&quot;rotation&quot;:0,&quot;annotation&quot;:null,&quot;nonHoverStrokeColor&quot;:[&quot;Color&quot;,0,0.74902,1],&quot;editable&quot;:true}\" id=\"rectangle_b7e4f50e-6653-4c3d-8be1-0b53cccafe20\" fill-opacity=\"0.00001\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"26.02041\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
+                    }
+                },
+                "within": {
+                    "@id": "http://iiif.harvardartmuseums.org/manifests/object/299843",
+                    "@type": "sc:Manifest"
+                }
+            }
+        ],
+        "@id": "1f05a446-a671-47e8-a648-c667a5aaea4b"
+    }
+]

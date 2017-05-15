@@ -1,0 +1,76 @@
+[
+    {
+        "@context": "http://catch-dev.harvardx.harvard.edu/catch-context.jsonld",
+        "id": "125940",
+        "type": "Annotation",
+        "schema_version": "catch v1.0",
+        "created": "2016-04-01T19:22:38 UTC",
+        "modified": "2016-04-01T19:22:38 UTC",
+        "creator": {
+            "id": "e742897d353125aaef178ad53e03d786",
+            "name": "SIdnani"
+        },
+        "permissions": {
+            "can_read": [],
+            "can_update": [
+                "e742897d353125aaef178ad53e03d786"
+            ],
+            "can_delete": [
+                "e742897d353125aaef178ad53e03d786"
+            ],
+            "can_admin": [
+                "e742897d353125aaef178ad53e03d786"
+            ]
+        },
+        "platform": {
+            "platform_name": "hxat vX",
+            "context_id": "course-v1:HarvardX+HxAT101+2015_T4",
+            "collection_id": "747e0b51-bba8-4941-a282-111720f52f0b",
+            "target_source_id": 9
+        },
+        "body": {
+            "type": "List",
+            "items": [
+                {
+                    "type": "TextualBody",
+                    "format": "text/html",
+                    "value": "Is this slant or perfect rhyme in Middle English?&nbsp;",
+                    "purpose": "commenting"
+                }
+            ]
+        },
+        "target": {
+            "type": "List",
+            "items": [
+                {
+                    "type": "Text",
+                    "source": "9",
+                    "format": "text/html",
+                    "selector": {
+                        "type": "List",
+                        "items": [
+                            {
+                                "type": "RangeSelector",
+                                "startSelector": {
+                                    "type": "XPathSelector",
+                                    "value": "/p[1]"
+                                },
+                                "endSelector": {
+                                    "type": "XPathSelector",
+                                    "value": "/p[1]"
+                                },
+                                "refinedBy": [
+                                    {
+                                        "type": "TextPositionSelector",
+                                        "start": 679,
+                                        "end": 763
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+]
