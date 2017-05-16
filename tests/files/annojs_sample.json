@@ -1,0 +1,173 @@
+{
+    "image": {
+      "tags": ["romance", "intrigue", "passion", "violence"],
+      "text": "oh i have this story about a watch tower",
+      "totalComments": 0,
+      "collectionId": "6e7209ca-34c6-44cc-aff6-c11bebad17ce",
+      "ranges": [],
+      "parent": "0",
+      "deleted": false,
+      "uri": "https://oculus.harvardx.harvard.edu/manifests/chx:201501/canvas/canvas-400098039.json",
+      "id": 126969,
+      "bounds": {
+        "height": "895",
+        "width": "1462",
+        "y": "1471",
+        "x": "72167"
+      },
+      "contextId": "course-v1:HarvardX+HxAT101+2015_T4",
+      "rangePosition": {
+        "height": "895",
+        "width": "1462",
+        "y": "1471",
+        "x": "72167"
+      },
+      "archived": false,
+      "created": "2017-01-30T19:59:32 UTC",
+      "updated": "2017-01-30T19:59:32 UTC",
+      "permissions": {
+        "update": [
+          "a223fa43592f3dc81abae27d5cba960f"
+        ],
+        "admin": [
+          "a223fa43592f3dc81abae27d5cba960f"
+        ],
+        "delete": [
+          "a223fa43592f3dc81abae27d5cba960f"
+        ],
+        "read": []
+      },
+      "user": {
+        "id": "a223fa43592f3dc81abae27d5cba960f",
+        "name": "lduarte1991"
+      },
+      "thumb": "https://images.harvardx.harvard.edu/ids/iiif/400098039/72167,1471,1462,895/full/0/native.jpg",
+      "media": "image"
+    },
+    "reply": {
+            "archived": false,
+            "citation": "None",
+            "collectionId": "e448f0b7-3bb4-4d21-a900-53246d5daed6",
+            "contextId": "course-v1:HarvardX+HxAT101+2015_T4",
+            "created": "2016-04-06T12:55:29 UTC",
+            "deleted": false,
+            "id": 125946,
+            "media": "comment",
+            "parent": "125918",
+            "permissions": {
+                "admin": [
+                    "1058ea0b00ddbd48718df6d18750fc27"
+                ],
+                "delete": [
+                    "1058ea0b00ddbd48718df6d18750fc27"
+                ],
+                "read": [],
+                "update": [
+                    "1058ea0b00ddbd48718df6d18750fc27"
+                ]
+            },
+            "quote": "",
+            "rangeTime": {
+                "end": 77.218993,
+                "start": 53.556893
+            },
+            "ranges": [],
+            "tags": ["quick", "test", "onFriday"],
+            "target": {
+                "container": "vid1",
+                "ext": "Youtube",
+                "src": "https://www.youtube.com/watch?v=2NRQPzSNXLM"
+            },
+            "text": "i'm replying",
+            "totalComments": 0,
+            "updated": "2016-04-06T12:55:29 UTC",
+            "uri": 31,
+            "user": {
+                "id": "1058ea0b00ddbd48718df6d18750fc27",
+                "name": "rsinghal"
+            }
+        },
+    "text": {
+        "tags": [],
+        "citation": "None",
+        "text": "Is this slant or perfect rhyme in Middle English?&nbsp;",
+        "totalComments": 1,
+        "collectionId": "747e0b51-bba8-4941-a282-111720f52f0b",
+        "ranges": [
+            {
+            "endOffset": 763,
+            "start": "/p[1]",
+            "end": "/p[1]",
+            "startOffset": 679
+            }
+        ],
+        "parent": "0",
+        "deleted": false,
+        "uri": 9,
+        "id": 125940,
+        "contextId": "course-v1:HarvardX+HxAT101+2015_T4",
+        "archived": false,
+        "created": "2016-04-01T19:22:38 UTC",
+        "updated": "2016-04-01T19:22:38 UTC",
+        "quote": "The hooly blisful martir for to seke,That hem hath holpen whan that they were seeke.",
+        "permissions": {
+            "update": [
+            "e742897d353125aaef178ad53e03d786"
+            ],
+            "admin": [
+            "e742897d353125aaef178ad53e03d786"
+            ],
+            "delete": [
+            "e742897d353125aaef178ad53e03d786"
+            ],
+            "read": []
+        },
+        "user": {
+            "id": "e742897d353125aaef178ad53e03d786",
+            "name": "SIdnani"
+        },
+        "media": "text"
+        },
+    "video": {
+            "tags": [
+                "stylish",
+                "hair"
+            ],
+            "text": "<p>checkout that mohawk!</p>",
+            "totalComments": 0,
+            "ranges": [],
+            "parent": "0",
+            "deleted": false,
+            "uri": "https://edge.edx.org/courses/course-v1:HarvardX+GA001+2015/courseware/e6bad387d7c44d0aa0dcf32b92dab491/62426155746e41e09c60721cdbdc8759//undefined/1",
+            "id": 360606,
+            "archived": false,
+            "created": "2017-03-22T17:12:41 UTC",
+            "updated": "2017-03-22T17:12:41 UTC",
+            "target": {
+                "container": "vid1",
+                "src": "https://www.youtube.com/watch?v=qkgTub9pB9A",
+                "ext": "Youtube"
+            },
+            "permissions": {
+                "update": [
+                    "nmaekawa@g.harvard.edu"
+                ],
+                "admin": [
+                    "nmaekawa@g.harvard.edu"
+                ],
+                "delete": [
+                    "nmaekawa@g.harvard.edu"
+                ],
+                "read": []
+            },
+            "rangeTime": {
+                "start": 204.8893869103546,
+                "end": 236.63106491488975
+            },
+            "media": "video",
+            "user": {
+                "id": "nmaekawa@g.harvard.edu",
+                "name": "nmaekawa2017"
+            }
+        }
+}

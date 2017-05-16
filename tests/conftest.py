@@ -47,3 +47,12 @@ def mirador_objs():
         mir.append(trans)
     return mir
 
+@pytest.fixture(scope='function')
+def annojs_objs():
+    filename = os.path.join(here, 'files/annojs_sample.json')
+    return readfile_into_jsonobj(filename)
+
+@pytest.fixture(scope='function')
+def annojs_db():
+    filename = os.path.join(here, 'files/annotatorjs_large_sample.json')
+    return readfile_into_jsonobj(filename)

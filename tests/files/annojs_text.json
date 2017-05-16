@@ -1,0 +1,41 @@
+{
+  "tags": [],
+  "citation": "None",
+  "text": "Is this slant or perfect rhyme in Middle English?&nbsp;",
+  "totalComments": 1,
+  "collectionId": "747e0b51-bba8-4941-a282-111720f52f0b",
+  "ranges": [
+    {
+      "endOffset": 763,
+      "start": "/p[1]",
+      "end": "/p[1]",
+      "startOffset": 679
+    }
+  ],
+  "parent": "0",
+  "deleted": false,
+  "uri": 9,
+  "id": 125940,
+  "contextId": "course-v1:HarvardX+HxAT101+2015_T4",
+  "archived": false,
+  "created": "2016-04-01T19:22:38 UTC",
+  "updated": "2016-04-01T19:22:38 UTC",
+  "quote": "The hooly blisful martir for to seke,That hem hath holpen whan that they were seeke.",
+  "permissions": {
+    "update": [
+      "e742897d353125aaef178ad53e03d786"
+    ],
+    "admin": [
+      "e742897d353125aaef178ad53e03d786"
+    ],
+    "delete": [
+      "e742897d353125aaef178ad53e03d786"
+    ],
+    "read": []
+  },
+  "user": {
+    "id": "e742897d353125aaef178ad53e03d786",
+    "name": "SIdnani"
+  },
+  "media": "text"
+}
