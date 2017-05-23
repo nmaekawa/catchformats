@@ -24,9 +24,9 @@
         },
         "platform": {
             "platform_name": "hxat vX",
-            "context_id": "course-v1:HarvardX+HxAT101+2015_T4",
-            "collection_id": "e448f0b7-3bb4-4d21-a900-53246d5daed6",
-            "target_source_id": 31
+            "contextId": "course-v1:HarvardX+HxAT101+2015_T4",
+            "collectionId": "e448f0b7-3bb4-4d21-a900-53246d5daed6",
+            "target_source_id": "31"
         },
         "body": {
             "type": "List",

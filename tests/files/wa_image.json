@@ -24,8 +24,8 @@
         },
         "platform": {
             "platform_name": "hxat vX",
-            "context_id": "course-v1:HarvardX+HxAT101+2015_T4",
-            "collection_id": "6e7209ca-34c6-44cc-aff6-c11bebad17ce",
+            "contextId": "course-v1:HarvardX+HxAT101+2015_T4",
+            "collectionId": "6e7209ca-34c6-44cc-aff6-c11bebad17ce",
             "target_source_id": "https://oculus.harvardx.harvard.edu/manifests/chx:201501/canvas/canvas-400098039.json"
         },
         "body": {

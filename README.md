@@ -14,7 +14,7 @@ Installation / Usage
 
 To install use pip:
 
-    $ pip install catchformats
+    $ pip install git+https://github.com/nmaekawa/catchformats.git
 
 
 Or clone the repo:

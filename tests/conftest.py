@@ -17,6 +17,12 @@ def readfile_into_jsonobj(filepath):
 
 
 @pytest.fixture(scope='function')
+def wa_schema():
+    filename = os.path.join(here, '../catchformats/webannotation-schema.json')
+    return readfile_into_jsonobj(filename)
+
+
+@pytest.fixture(scope='function')
 def wa_objs():
     filename = os.path.join(here, 'files/wa_sample.json')
     return readfile_into_jsonobj(filename)

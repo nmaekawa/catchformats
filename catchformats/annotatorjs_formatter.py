@@ -13,7 +13,6 @@ TEMP_ID = 'not_available'
 
 def annojs_to_annotation(annojs):
     '''formats input `annojs` from annotatorjs into catch webannotation.
-
         TODO: reference to annotatorjs format
     '''
     try:
@@ -27,7 +26,7 @@ def annojs_to_annotation(annojs):
     anno_id = str(annojs['id']) if 'id' in annojs else TEMP_ID
     wa = {
         '@context': CATCH_CONTEXT_IRI,
-        'id': anno_id,
+        'id': str(anno_id),
         'type': 'Annotation',
         'schema_version': 'catch v1.0',
         'created': annojs['created'],
@@ -44,11 +43,11 @@ def annojs_to_annotation(annojs):
         },
         'platform': {
             'platform_name': 'hxat v1.0',
-            'context_id': annojs['contextId'] \
+            'contextId': annojs['contextId'] \
                     if 'contextId' in annojs else 'unknown',
-            'collection_id': annojs['collectionId'] \
+            'collectionId': annojs['collectionId'] \
                     if 'collectionId' in annojs else 'unknown',
-            'target_source_id': target_source,
+            'target_source_id': str(target_source),
         },
     }
 
@@ -159,7 +158,7 @@ def format_target_video(anno_id, annojs):
         'items': [{
             'type': 'Video',
             'format': 'video/{}'.format(annojs['target']['ext'].lower()),
-            'source': str(annojs['uri']),
+            'source': annojs['target']['src'],
             'selector': {
                 'type': 'List',
                 'items': [{
@@ -167,9 +166,10 @@ def format_target_video(anno_id, annojs):
                     'conformsTo': 'http://www.w3.org/TR/media-frags/',
                     'value': 't={0},{1}'.format(
                         annojs['rangeTime']['start'], annojs['rangeTime']['end']),
-                    'refinedBy': {
+                    'refinedBy': [{
                         'type': 'CssSelector',
-                        'value': '#{}'.format(annojs['target']['container'])},
+                        'value': '#{}'.format(annojs['target']['container'])
+                    }],
                 }]
             }
         }]
@@ -239,3 +239,22 @@ def strategy_2_1_for_target_selector(annojs):
         'type': 'SvgSelector',
         'value': annojs['rangePosition'],
     }
+
+
+
+#def annotation_to_annojs(wa, replies):
+#    '''format catch annotation back to annotatorjs.
+#
+#        formatting back to annotatorjs requires the webannotation object
+#        itself, to follow relationships and construct the annotatorjs object.
+#
+#        please check the catchpy project.
+#    '''
+#    raise NotImplementedError
+
+
+
+
+
+
+

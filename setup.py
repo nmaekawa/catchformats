@@ -8,7 +8,7 @@ from setuptools import find_packages
 here = os.path.abspath(os.path.dirname(__file__))
 
 def get_version(*file_paths):
-    """Retrieves the version from annotation/__init__.py"""
+    """Retrieves the version from catchformats/__init__.py"""
     filename = os.path.join(here, *file_paths)
     version_file = open(filename).read()
     version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]",

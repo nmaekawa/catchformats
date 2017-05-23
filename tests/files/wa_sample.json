@@ -24,8 +24,8 @@
         },
         "platform": {
             "platform_name": "hxat vX",
-            "context_id": "course-v1:HarvardX+HxAT101+2015_T4",
-            "collection_id": "6e7209ca-34c6-44cc-aff6-c11bebad17ce",
+            "contextId": "course-v1:HarvardX+HxAT101+2015_T4",
+            "collectionId": "6e7209ca-34c6-44cc-aff6-c11bebad17ce",
             "target_source_id": "https://oculus.harvardx.harvard.edu/manifests/chx:201501/canvas/canvas-400098039.json"
         },
         "body": {
@@ -109,9 +109,9 @@
         },
         "platform": {
             "platform_name": "hxat vX",
-            "context_id": "course-v1:HarvardX+HxAT101+2015_T4",
-            "collection_id": "e448f0b7-3bb4-4d21-a900-53246d5daed6",
-            "target_source_id": 31
+            "contextId": "course-v1:HarvardX+HxAT101+2015_T4",
+            "collectionId": "e448f0b7-3bb4-4d21-a900-53246d5daed6",
+            "target_source_id": "31"
         },
         "body": {
             "type": "List",
@@ -175,9 +175,9 @@
         },
         "platform": {
             "platform_name": "hxat vX",
-            "context_id": "course-v1:HarvardX+HxAT101+2015_T4",
-            "collection_id": "747e0b51-bba8-4941-a282-111720f52f0b",
-            "target_source_id": 9
+            "contextId": "course-v1:HarvardX+HxAT101+2015_T4",
+            "collectionId": "747e0b51-bba8-4941-a282-111720f52f0b",
+            "target_source_id": "9"
         },
         "body": {
             "type": "List",
@@ -249,8 +249,8 @@
         },
         "platform": {
             "platform_name": "hxat vX",
-            "context_id": "unknown",
-            "collection_id": "unknown",
+            "contextId": "unknown",
+            "collectionId": "unknown",
             "target_source_id": "https://edge.edx.org/courses/course-v1:HarvardX+GA001+2015/courseware/e6bad387d7c44d0aa0dcf32b92dab491/62426155746e41e09c60721cdbdc8759//undefined/1"
         },
         "body": {
@@ -288,10 +288,10 @@
                                 "type": "FragmentSelector",
                                 "conformsTo": "http://www.w3.org/TR/media-frags/",
                                 "value": "t=204.8893869103546,236.63106491488975",
-                                "refinedBy": {
+                                "refinedBy": [{
                                     "type": "CssSelector",
                                     "value": "#vid1"
-                                }
+                                }]
                             }
                         ]
                     }

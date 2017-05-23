@@ -85,7 +85,7 @@ def validate_anno_list_or_dict(prop, obj, wa_id):
     return obj
 
 
-def expand_compact(wa):
+def expand_compact_for_context(wa, context):
     '''assumes anno has @context.'''
     context = wa['@context']
     try:
@@ -103,7 +103,7 @@ def expand_compact(wa):
         raise e
 
     try:
-        translated = jsonld.compact(expanded, CATCH_CONTEXT_IRI)
+        translated = jsonld.compact(expanded, context)
     except Exception as e:
         msg = 'translation for context({}) of anno({}) failed: {}'.format(
             CATCH_CONTEXT_IRI, wa['id'], str(e))

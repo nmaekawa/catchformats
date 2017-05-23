@@ -24,8 +24,8 @@
         },
         "platform": {
             "platform_name": "hxat vX",
-            "context_id": "unknown",
-            "collection_id": "unknown",
+            "contextId": "unknown",
+            "collectionId": "unknown",
             "target_source_id": "https://edge.edx.org/courses/course-v1:HarvardX+GA001+2015/courseware/e6bad387d7c44d0aa0dcf32b92dab491/62426155746e41e09c60721cdbdc8759//undefined/1"
         },
         "body": {
