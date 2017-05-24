@@ -5,7 +5,7 @@ import pytest
 
 from catchformats.webannotation_validator import validate_annotation
 from catchformats.annotatorjs_formatter import annojs_to_annotation
-from catchformats.catch_webannotation_validators import validate_catch_webannotation
+from catchformats.catch_webannotation_validator import validate_catch_webannotation
 from .conftest import here
 
 
