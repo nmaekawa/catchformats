@@ -15,6 +15,7 @@ def annojs_to_annotation(annojs):
     '''formats input `annojs` from annotatorjs into catch webannotation.
         TODO: reference to annotatorjs format
     '''
+    anno_id = str(annojs['id']) if 'id' in annojs else TEMP_ID
     try:
         media = annojs['media']
         target_source = str(annojs['uri'])
@@ -23,7 +24,6 @@ def annojs_to_annotation(annojs):
             'anno({}): expected property not found - {}'.format(
                 anno_id, str(e)))
 
-    anno_id = str(annojs['id']) if 'id' in annojs else TEMP_ID
     wa = {
         '@context': CATCH_CONTEXT_IRI,
         'id': str(anno_id),
@@ -57,8 +57,8 @@ def annojs_to_annotation(annojs):
         wa['target'] = format_target_reply(anno_id, annojs)
     elif media == 'text':
         wa['target'] = format_target_text(anno_id, annojs)
-    elif media == 'video':
-        wa['target'] = format_target_video(anno_id, annojs)
+    elif media == 'video' or media == 'audio':
+        wa['target'] = format_target_video(anno_id, annojs, media)
     elif media == 'image':
         wa['target'] = format_target_image(anno_id, annojs)
     else:
@@ -151,13 +151,13 @@ def format_target_text(anno_id, annojs):
     return target
 
 
-def format_target_video(anno_id, annojs):
+def format_target_video(anno_id, annojs, media):
     try:
         target = {
         'type': 'List',
         'items': [{
-            'type': 'Video',
-            'format': 'video/{}'.format(annojs['target']['ext'].lower()),
+            'type': media.capitalize(),
+            'format': '{}/{}'.format(media, annojs['target']['ext'].lower()),
             'source': annojs['target']['src'],
             'selector': {
                 'type': 'List',
@@ -206,18 +206,28 @@ def format_target_image(anno_id, annojs):
         if len(selector['items']) > 1:
             selector['type'] = 'Choice'  # dual strategy
 
+        t_item = {'type': 'Image',
+                  'source': str(annojs['uri']),
+                  'selector': selector}
+
+        if 'bounds' in annojs and annojs['bounds']:
+            try:
+                pos = annojs['bounds']
+                value = 'xywh={},{},{},{}'.format(
+                    pos['x'], pos['y'], pos['width'], pos['height'])
+            except KeyError:
+                pass  # ignore 'bounds' if it fails
+            else:
+                t_item['scope'] = {'type': 'Viewport', 'value': value}
+        target['items'].append(t_item)
+
+    if 'thumb' in annojs and annojs['thumb']:
         target['items'].append({
-                'type': 'Image',
-                'source': str(annojs['uri']),
-                'selector': selector
+            'type': 'Thumbnail',
+            'source': str(annojs['thumb']),
+            'format': 'image/jpg',  # guessing
         })
-        if 'thumb' in annojs and annojs['thumb']:
-            target['items'].append({
-                'type': 'Thumbnail',
-                'source': str(annojs['thumb']),
-                'format': 'image/jpg',  # guessing
-            })
-            target['type'] = 'Choice'
+        target['type'] = 'Choice'
 
     return target
 

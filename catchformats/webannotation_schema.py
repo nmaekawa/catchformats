@@ -236,7 +236,7 @@ CATCH_WEBANNOTATION_SCHEMA = {
         },
         "Platform": {
             "type": "object",
-            "required": ["platform_name", "contextId", "target_source_id"],
+            "required": ["platform_name", "contextId"],
             "properties": {
                 "platform_name": {
                     "type": "string"

@@ -9,7 +9,7 @@ from .webannotation_validator import validate_annotation
 from .webannotation_schema import CATCH_WEBANNOTATION_SCHEMA
 
 
-def validate_catch_webannotation(wa):
+def validate_format_catchanno(wa):
     if '@context' in wa:
         try:
             norm = expand_compact_for_context(wa, CATCH_CONTEXT_IRI)

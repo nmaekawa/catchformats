@@ -5,7 +5,7 @@ import pytest
 
 from catchformats.webannotation_validator import validate_annotation
 from catchformats.annotatorjs_formatter import annojs_to_annotation
-from catchformats.catch_webannotation_validator import validate_catch_webannotation
+from catchformats.catch_webannotation_validator import validate_format_catchanno
 from .conftest import here
 
 
@@ -13,7 +13,7 @@ from .conftest import here
 def test_wa_validate_ok(wa_objs):
     for media in ['image', 'text', 'video', 'reply']:
         x = validate_annotation(wa_objs[media])
-        z = validate_catch_webannotation(x)
+        z = validate_format_catchanno(x)
         assert(x == wa_objs[media])
 
 @pytest.mark.skip('not supported yet.')
@@ -29,7 +29,7 @@ def test_annojs_format_ok(annojs_objs):
     for media in ['image', 'reply', 'text', 'video']:
         x = annojs_to_annotation(annojs_objs[media])
         y = validate_annotation(x)
-        z = validate_catch_webannotation(x)
+        z = validate_format_catchanno(x)
         assert x == y
 
 @pytest.mark.skip('skip')

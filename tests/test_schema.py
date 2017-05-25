@@ -15,6 +15,7 @@ def test_wa_validate_ok(wa_objs, wa_schema):
     for media in ['image', 'text', 'video', 'reply']:
         validate(wa_objs[media], wa_schema)
 
+
 @pytest.mark.usefixtures('wa_schema')
 def test_wa_validate_longer(wa_schema):
     filename = os.path.join(here, 'files/annojs_to_wa.json')
