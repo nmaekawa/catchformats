@@ -25,7 +25,7 @@ def validate_format_catchanno(wa):
         try:
             norm = annojs_to_annotation(wa)
         except Exception as e:
-            raise AnnotatorJSError('cannot format into AnnotatorJS')
+            raise AnnotatorJSError('cannot format from AnnotatorJS')
 
     # by now we have a webannotation
     try:
