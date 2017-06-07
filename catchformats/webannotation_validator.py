@@ -12,35 +12,34 @@ MIRADOR_CONTEXT_IRI = 'http://iiif.io/api/presentation/2/context.json'
 
 WA_MANDATORY_PROPS = {
     # `schema_version`, `permissions`, `platform` not mandatory
-    'anno': ['type',  'body', 'target'],
+    'anno': ['type',  'body', 'target', 'creator'],
     'body': ['type', 'items'],
     'body_items': ['type', 'purpose', 'value'],  # `format` not mandatory
     'target': ['type', 'items'],
     'target_items': ['type', 'source'],  # `format` not mandatory
+    'creator': ['id', 'name'],
     'platform': ['name', 'contextId', 'collectionId', 'target_source_id'],
 }
 WA_NOT_FOR_CREATE_PROPS = {
     'anno': ['created', 'modified', 'creator', 'permissions'],
-    'creator': ['id', 'name'],
     'permissions': ['can_read', 'can_update', 'can_delete', 'can_admin'],
 }
 
 def validate_annotation_mandatory(wa):
     '''minimal validation, for generic web annotation.'''
-    wa_id = wa['id'] if 'id' in wa else 'unknown'
+    wa_id = wa.get('id', 'unknown')
 
     validate_anno_dict(WA_MANDATORY_PROPS, 'anno', wa, wa_id)
+    validate_anno_dict(WA_MANDATORY_PROPS, 'creator', wa['creator'], wa_id)
     validate_anno_list_or_dict(WA_MANDATORY_PROPS, 'body', wa['body'], wa_id)
     validate_anno_list_or_dict(WA_MANDATORY_PROPS, 'target', wa['target'], wa_id)
     return wa
 
 def validate_annotation_not_for_create(wa):
     '''it has to have `creator`, `created`, `modified`, `permissions`.'''
-    wa_id = wa['id'] if 'id' in wa else 'unknown'
+    wa_id = wa.get('id', 'unknown')
 
-    wa_id = wa['id'] if 'id' in wa else 'unknown'
     validate_anno_dict(WA_NOT_FOR_CREATE_PROPS, 'anno', wa, wa_id)
-    validate_anno_dict(WA_NOT_FOR_CREATE_PROPS, 'creator', wa['creator'], wa_id)
     validate_anno_dict(WA_NOT_FOR_CREATE_PROPS, 'permissions', wa['permissions'], wa_id)
     return wa
 
