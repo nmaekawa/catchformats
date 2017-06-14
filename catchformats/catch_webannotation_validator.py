@@ -41,3 +41,39 @@ def validate_format_catchanno(wa, mandatory_only=False):
             'unable to validate input annotation: {}'.format(str(e)))
     return norm
 
+
+def wa_are_similar(wa1, wa2):
+    '''check that wa1 and wa2 are similar.'''
+    # disregard times for created/modified
+    for key in ['@context', 'id', 'type', 'schema_version',
+                'creator', 'platform']:
+        if wa1[key] != wa2[key]:
+            print('key({}) is different'.format(key))
+            return False
+
+    for key in wa1['permissions']:
+        if set(wa1['permissions'][key]) != set(wa2['permissions'][key]):
+            print('permissions[{}] is different'.format(key))
+            return False
+
+    # body
+    if wa1['body']['type'] != wa2['body']['type']:
+        print('body type is different')
+        return False
+    body1 = sorted(wa1['body']['items'], key=lambda k: k['value'])
+    body2 = sorted(wa2['body']['items'], key=lambda k: k['value'])
+    if body1 != body2:
+        print('body items are different')
+        return False
+
+    # target
+    if wa1['target']['type'] != wa2['target']['type']:
+        print('target type is different.')
+        return False
+    target1 = sorted(wa1['target']['items'], key=lambda k: k['source'])
+    target2 = sorted(wa2['target']['items'], key=lambda k: k['source'])
+    if target1 != target2:
+        print('target items are different')
+        return False
+
+    return True
