@@ -1,5 +1,6 @@
 
 from jsonschema import validate
+import jsonschema
 
 from .annotatorjs_formatter import annojs_to_annotation
 from .errors import  CatchFormatsError
@@ -9,6 +10,20 @@ from .webannotation_validator import validate_annotation
 from .webannotation_validator import validate_annotation_mandatory
 from .webannotation_validator import validate_annotation_not_for_create
 from .webannotation_schema import CATCH_WEBANNOTATION_SCHEMA
+
+CATCH_CONTEXT_IRI='http://catch-dev.harvardx.harvard.edu/catch-context.jsonld'
+
+
+def validate_format_catcha(wa, mandatory_only=False):
+    try:
+        norm = expand_compact_for_context(wa, CATCH_CONTEXT_IRI)
+        jsonschema.validate(norm, CATCH_WEBANNOTATION_SCHEMA)
+    except Exception as e:
+        import logging
+        logging.getLogger(__name__).error('jsonschema validation error',
+                                            exc_info=True)
+        raise e
+    return norm
 
 
 def validate_format_catchanno(wa, mandatory_only=False):
@@ -34,6 +49,8 @@ def validate_format_catchanno(wa, mandatory_only=False):
                 'cannot format from AnnotatorJS: {}'.format(e))
 
     # by now we have a webannotation
+    import json
+    print('-------------- norm({})'.format(json.dumps(norm)))
     try:
         validate(norm, CATCH_WEBANNOTATION_SCHEMA)
     except Exception as e:
@@ -77,3 +94,4 @@ def wa_are_similar(wa1, wa2):
         return False
 
     return True
+

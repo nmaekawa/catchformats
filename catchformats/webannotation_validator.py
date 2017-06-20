@@ -12,7 +12,7 @@ MIRADOR_CONTEXT_IRI = 'http://iiif.io/api/presentation/2/context.json'
 
 WA_MANDATORY_PROPS = {
     # `schema_version`, `permissions`, `platform` not mandatory
-    'anno': ['type',  'body', 'target', 'creator'],
+    'anno': ['id', 'type',  'body', 'target', 'creator'],
     'body': ['type', 'items'],
     'body_items': ['type', 'purpose', 'value'],  # `format` not mandatory
     'target': ['type', 'items'],
@@ -104,7 +104,7 @@ def expand_compact_for_context(wa, context):
     '''assumes anno has @context.'''
     context = wa['@context']
     try:
-        compacted = jsonld.compact(wa, context)
+        compacted = jsonld.compact(wa, context, compactArrays=False)
     except Exception as e:
         msg = 'compaction for context({}) of anno({}) failed: {}'.format(
             context, wa['id'], str(e))
@@ -118,7 +118,7 @@ def expand_compact_for_context(wa, context):
         raise e
 
     try:
-        translated = jsonld.compact(expanded, context)
+        translated = jsonld.compact(expanded, context, compactArrays=False)
     except Exception as e:
         msg = 'translation for context({}) of anno({}) failed: {}'.format(
             CATCH_CONTEXT_IRI, wa['id'], str(e))

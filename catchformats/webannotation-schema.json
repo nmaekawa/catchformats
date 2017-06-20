@@ -213,13 +213,22 @@
             "required": ["can_read", "can_update", "can_delete", "can_admin"],
             "properties": {
                 "can_read": {
-                    "$ref": "#/definitions/Permission"
+                    "type": "array",
+                    "minItems": 0,
+                    "items': {"type": "string"},
+                    "uniqueItems": true
                 },
                 "can_update": {
-                    "$ref": "#/definitions/Permission"
+                    "type": "array",
+                    "minItems": 0,
+                    "items': {"type": "string"},
+                    "uniqueItems": true
                 },
                 "can_delete": {
-                    "$ref": "#/definitions/Permission"
+                    "type": "array",
+                    "minItems": 0,
+                    "items': {"type": "string"},
+                    "uniqueItems": true
                 },
                 "can_admin": {
                     "$ref": "#/definitions/Permission"

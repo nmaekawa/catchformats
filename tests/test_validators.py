@@ -3,10 +3,19 @@ import json
 import os
 import pytest
 
+from catchformats.webannotation_schema import CATCH_WEBANNOTATION_SCHEMA
 from catchformats.webannotation_validator import validate_annotation
 from catchformats.annotatorjs_formatter import annojs_to_annotation
 from catchformats.catch_webannotation_validator import validate_format_catchanno
+from catchformats.catch_webannotation_validator import validate_format_catcha
 from .conftest import here
+
+@pytest.mark.usefixtures('wa_objs')
+def test_validate_json(wa_objs):
+    import jsonschema
+
+    for media in ['image', 'text', 'video', 'reply']:
+        jsonschema.validate(wa_objs[media], CATCH_WEBANNOTATION_SCHEMA)
 
 
 @pytest.mark.usefixtures('wa_objs')

@@ -1,5 +1,6 @@
 """formats from annotatorjs to catch webannotation.  """
-
+from datetime import datetime
+from dateutil import tz
 import json
 import sys
 
@@ -24,13 +25,15 @@ def annojs_to_annotation(annojs):
             'anno({}): expected property not found - {}'.format(
                 anno_id, str(e)))
 
+    now = datetime.now(tz.tzutc()).replace(microsecond=0).isoformat()
     wa = {
         '@context': CATCH_CONTEXT_IRI,
         'id': str(anno_id),
         'type': 'Annotation',
         'schema_version': 'catch v1.0',
-        'created': annojs['created'],
-        'modified': annojs['updated'],
+        'created': annojs.get('created', now),
+        'modified': annojs.get('updated', now),
+
         'creator':  {
             'id': annojs['user']['id'],
             'name': annojs['user']['name'],
